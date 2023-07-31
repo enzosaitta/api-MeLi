@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./index.css" />
+    <script async src="./index.js"></script>
+  </head>
+  <body>
+    <header class="header-content">
+      <div class="header-container">
+        <form class="form" action="">
+          <input
+            class="header-search"
+            type="text"
+            name="buscar"
+            placeholder="Buscar productos, marcas y más..."
+          />
+          <button class="header-buttton-search">Buscar</button>
+        </form>
+      </div>
+    </header>
+    <div class="content">
+      <h3 class="results">Resultados: <span class="rcount"></span></h3>
+      <div class="results"></div>
+    </div>
+    <template id="results-item-template">
+      <div class="resultados">
+        <div class="results-items">
+          <img
+            id="result-imagen"
+            class="resuls-item-img"
+            src="./IPHONE-11-VERDE-631e73be8cfed.png"
+            alt="iPhone 11"
+          />
+          <div class="results-item-content">
+            <h4 class="results-item-title">Nombre del producto</h4>
+            <p class="results-item-condition">Nuevo</p>
+            <p class="reuslts-item-sell">
+              vendidos: <span class="reuslts-item-sell-count"> </span>
+            </p>
+          </div>
+          <div class="result-item-price"><span>$</span></div>
+        </div>
+      </div>
+    </template>
+  </body>
+</html>
